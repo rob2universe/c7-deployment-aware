@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.camunda.example.service;
+package example.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
@@ -45,5 +45,8 @@ public class LoggerDelegate implements JavaDelegate {
     Map<String, Object> variables = exec.getVariables();
     for (Map.Entry<String, Object> entry : variables.entrySet())
       log.info(entry.getKey() + " : " + entry.getValue());
+
+    throw new RuntimeException("HA!");
   }
+
 }

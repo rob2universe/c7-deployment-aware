@@ -7,6 +7,8 @@ camunda:
       last-name: Demo
     filter:
       create: All tasks
+    job-execution:
+      deployment-aware: false
 
 spring:
   h2:
@@ -18,4 +20,4 @@ spring:
     username: sa
     password: sa
 server:
-  port: 8080
+  port: 8088

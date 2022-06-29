@@ -1,5 +1,3 @@
-# vanilla-camunda-template
+# c7-deploymnet-aware
 
-This is a template repository to create a plain vanilla CAMUNDA Platform EE Spring Boot project.
-
-This is the best generic starting point!  - Change my mind :)
+Example configuration of deployment-aware Camunda 7
